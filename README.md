@@ -17,11 +17,27 @@ Este proyecto implementa dos utilidades de línea de comandos, una en PowerShell
 ```
 /datacenter-tools/
 ├── powershell/
-│   ├── src/          
-│   ├── README.md     
-├── bash/
-│   ├── src/          
-│   ├── README.md     
+├── src/
+│ ├── main.ps1 # Script principal con el menú
+│ ├── modules/
+│ │ ├── users.ps1 # Módulo para listar usuarios
+│ │ ├── disks.ps1 # Módulo para listar discos
+│ │ ├── files.ps1 # Módulo para listar archivos grandes
+│ │ ├── memory.ps1 # Módulo para información de memoria
+│ │ ├── backup.ps1 # Módulo para backup
+├── tests/ 
+└── README.md  
+bash/
+├── src/
+│ ├── main.sh # Script principal con el menú
+│ ├── modules/
+│ │ ├── users.sh # Módulo para listar usuarios
+│ │ ├── disks.sh # Módulo para listar filesystems
+│ │ ├── files.sh # Módulo para archivos grandes
+│ │ ├── memory.sh # Módulo para memoria/swap
+│ │ ├── backup.sh # Módulo para backup
+├── tests/ # Scripts o pruebas unitarias
+└── README.md 
 ├── docs/             
 ├── .gitignore
 ├── README.md         
