@@ -6,37 +6,37 @@ Este proyecto implementa dos utilidades de línea de comandos, una en PowerShell
 
 ## Funcionalidades
 
-1. Cada herramienta (PowerShell y Bash) incluye:
-2. Listado de usuarios y fecha/hora de último acceso.
-3. Información de discos y filesystems: tamaño total y espacio libre.
-4. Lista de los diez archivos más grandes en una ruta específica.
-5. Estado de memoria libre y swap en uso.
-6. Backup de un directorio a una USB, con catálogo de archivos y fecha de modificación.
+Cada herramienta (PowerShell y Bash) incluye:
+1. Listado de usuarios y fecha/hora de último acceso.
+2. Información de discos y filesystems: tamaño total y espacio libre.
+3. Lista de los diez archivos más grandes en una ruta específica.
+4. Estado de memoria libre y swap en uso.
+5. Backup de un directorio a una USB, con catálogo de archivos y fecha de modificación.
 
 ## Estrucutra del Proyecto
 ```
 /datacenter-tools/
 ├── powershell/
 ├── src/
-│ ├── main.ps1 # Script principal con el menú
+│ ├── main.ps1 
 │ ├── modules/
-│ │ ├── users.ps1 # Módulo para listar usuarios
-│ │ ├── disks.ps1 # Módulo para listar discos
-│ │ ├── files.ps1 # Módulo para listar archivos grandes
-│ │ ├── memory.ps1 # Módulo para información de memoria
-│ │ ├── backup.ps1 # Módulo para backup
+│ │ ├── users.ps1
+│ │ ├── disks.ps1
+│ │ ├── files.ps1 
+│ │ ├── memory.ps1 
+│ │ ├── backup.ps1 
 ├── tests/ 
 └── README.md  
 bash/
 ├── src/
-│ ├── main.sh # Script principal con el menú
+│ ├── main.sh 
 │ ├── modules/
-│ │ ├── users.sh # Módulo para listar usuarios
-│ │ ├── disks.sh # Módulo para listar filesystems
-│ │ ├── files.sh # Módulo para archivos grandes
-│ │ ├── memory.sh # Módulo para memoria/swap
-│ │ ├── backup.sh # Módulo para backup
-├── tests/ # Scripts o pruebas unitarias
+│ │ ├── users.sh 
+│ │ ├── disks.sh 
+│ │ ├── files.sh 
+│ │ ├── memory.sh
+│ │ ├── backup.sh 
+├── tests/ 
 └── README.md 
 ├── docs/             
 ├── .gitignore
